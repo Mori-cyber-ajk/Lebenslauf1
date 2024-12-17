@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebenslauf - Moritz Schmidt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+            cursor: pointer;
+        }
+        section .content {
+            display: none;
+            margin-top: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #777;
+        }
+    </style>
+    <script>
+        // Funktion zum Ein- und Ausblenden der Inhalte
+        document.addEventListener("DOMContentLoaded", function() {
+            const headers = document.querySelectorAll("section h2");
+            headers.forEach(header => {
+                header.addEventListener("click", () => {
+                    const content = header.nextElementSibling;
+                    content.style.display = content.style.display === "none" ? "block" : "none";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Lebenslauf - Moritz Schmidt</h1>
+    </header>
+    <section>
+        <h2>Persönliche Daten</h2>
+        <div class="content">
+            <p><strong>Name:</strong> Moritz Schmidt</p>
+            <p><strong>Geburtsdatum:</strong> 07.11.2008</p>
+            <p><strong>Geburtsort:</strong> Achern</p>
+            <p><strong>Eltern:</strong> Bernhard Schmidt (Schulleiter), Claudia Schmidt (Lehrerin)</p>
+        </div>
+    </section>
+    <section>
+        <h2>Schulbildung</h2>
+        <div class="content">
+            <ul>
+                <li><strong>Voraussichtlicher Schulabschluss:</strong> Juli 2027</li>
+                <li><strong>Gymnasium:</strong> Seit 2019 Gymnasium Achern</li>
+                <li><strong>Aktueller Notenschnitt:</strong> 2,3</li>
+                <li><strong>Lieblingsfächer:</strong> Physik, Englisch, Sport</li>
+                <li><strong>Grundschule:</strong> 2015–2019 Grundschule Sasbachried</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Praktische Erfahrungen</h2>
+        <div class="content">
+            <ul>
+                <li>Mai–Juni 2024: Einwöchiges Praktikum bei Robert Bosch GmbH im Bereich IT (Erstellen von Webseiten)</li>
+                <li>2023–2024: Zeitungsausträger</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Kenntnisse</h2>
+        <div class="content">
+            <ul>
+                <li><strong>Sprachkenntnisse:</strong></li>
+                <ul>
+                    <li>Deutsch (Muttersprache)</li>
+                    <li>Englisch (fließend)</li>
+                    <li>Französisch (Schulkenntnisse)</li>
+                </ul>
+                <li><strong>Programmierkenntnisse:</strong></li>
+                <ul>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>Weitere Kenntnisse</li>
+                </ul>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Hobbys</h2>
+        <div class="content">
+            <ul>
+                <li><strong>Basketball:</strong> Regelmäßiges Training und Engagement im Verein. Fokus auf Ballhandling, Sprungkraft und Schnelligkeit. Ziel: Der beste Spieler des Vereins werden.</li>
+                <li><strong>Fitnessstudio:</strong> Krafttraining mit klaren Zielen. Aktuell: Muskelaufbau und Steigerung der sportlichen Leistung. Dediziertes Training: Beine, Rücken, Arme und Brust.</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>Achern, 16.12.2024</p>
+        <p>© 2024 Moritz Schmidt. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
